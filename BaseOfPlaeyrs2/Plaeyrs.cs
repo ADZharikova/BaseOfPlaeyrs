@@ -1,4 +1,5 @@
-﻿
+using System;
+
 namespace BaseOfPlayers
 {
     internal class Players
