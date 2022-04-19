@@ -36,8 +36,8 @@ namespace BaseOfPlayers
 
                         Console.ResetColor();
                         Console.Write("Чтобы создать нового пользователя введите ник: ");
-                        username = Console.ReadLine();
-                        if (!String.IsNullOrEmpty(username.Trim()))
+                        username = Console.ReadLine().Replace(" ", "");
+                        if (!String.IsNullOrEmpty(username))
                         {
                             dataBaseOfPlayers.AddPlayer(username);
                         }
